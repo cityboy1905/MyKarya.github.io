@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+html{
+
+  scroll-behavior: smooth;
+
+}
+section{
+  scroll-snap-align: start;
+}
+
+body {
+  background: linear-gradient(216deg, #0c4e9b, #1d0c13, #f2498e);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 35s ease infinite;
+    -moz-animation: AnimationName 35s ease infinite;
+    -o-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 35s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 43%}
+  50%{background-position:100% 58%}
+  100%{background-position:0% 43%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 43%}
+  50%{background-position:100% 58%}
+  100%{background-position:0% 43%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 43%}
+  50%{background-position:100% 58%}
+  100%{background-position:0% 43%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 43%}
+  50%{background-position:100% 58%}
+  100%{background-position:0% 43%}
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+
+.header-scrolled {
+  background-color: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.body-content {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.introduction {
+  height: 100vh;
+  width: 100%;
+  padding: 3em;
+ 
+}
+
+.layout {
+  height: 100%;
+  border: 1px black solid;
+  background-color: rgb(250, 235, 215);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px #181818;
+
+}
+
+.text {
+  margin-left: 3em;
+  width: 60%;
+}
+
+.gambar {
+  margin-left: 4em;
+  width: 40%;
+}
+
+#preloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(64, 64, 64, 1) 97%), url(image/load.gif) center center no-repeat;
+  background-blend-mode: overlay;
+}
+.ayat-1{
+  margin-left: -1em;
+}
+
+.btn-resume{
+  width: 6em ;
+  background-color: #282828;
+  color: antiquewhite;
+  font-size: xx-large;
+  box-shadow: 10px 5px 10px #181818;
+}
+.btn-resume:hover{
+  background-color: antiquewhite;
+  color: #282828;
+}
+
+.about {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em;
+
+}
+.Portfolio{
+  height: 100%;
+  display: flex;
+}
+.header-project{
+  color: antiquewhite;
+  font-size: 6em;
+  font-weight: 600;
+}
+
+.project-body{
+  color: antiquewhite;
+}
+
+.row-header{
+  height: 20%;
+
+}
+footer{
+  width: 100%;
+  color: antiquewhite;
+  background-color: #181818;
+  font-size: large;
+}
+
+.text.p{
+font-size: 10em;
+}
+@keyframes moveLeftToRight {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+#about-me {
+  animation: moveLeftToRight 5s linear infinite; /* Adjust the duration (5s) and timing function (linear) as needed */
+}
+#emailLink {
+  transition: color 0.3s ease; /* Adding transition for smooth color change */
+}
+
+#emailLink:hover,
+#emailLink:active,
+#emailLink:focus {
+  color: rgb(0, 255, 255); /* Change color on hover, click, and focus */
+}
