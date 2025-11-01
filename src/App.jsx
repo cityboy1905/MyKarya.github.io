@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Header, Footer,Hero,About } from './components'
+import { Header, Footer,Hero,About,Skill,Project} from './components'
 import './App.css'
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header />
       <Hero />
-      <About />  
+      <About />
+      <Skill />
+      <Project />
       <Footer />
     </div>
   )
